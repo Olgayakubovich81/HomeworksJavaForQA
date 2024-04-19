@@ -33,7 +33,6 @@ public class MyLinkedList {
         // Если в списке только один элемент, очищаем список
         if (head.getNextSibling() == null) {
             head = null;
-
             tail = null;
             return;
         }
@@ -44,10 +43,7 @@ public class MyLinkedList {
             current = current.getNextSibling();
         }
         // Теперь current указывает на предпоследний элемент
-        current.setTextContent(null);
+        current.getNextSibling();
         tail = current; // Обновляем tail
     }
-
-
 }
-
