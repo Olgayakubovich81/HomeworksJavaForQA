@@ -1,6 +1,15 @@
 package JavaforQA.HW05Part1;
 
-    public enum Suit {
-        HEARTS, DIAMONDS, CLUBS, SPADES
+enum Suit {
+    HEARTS(Color.RED), DIAMONDS(Color.RED), CLUBS(Color.BLACK), SPADES(Color.BLACK);
+
+    private final Color color;
+
+    Suit(Color color) {
+        this.color = color;
     }
 
+    public Color getColor() {
+        return color;
+    }
+}
